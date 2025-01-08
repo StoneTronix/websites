@@ -1,0 +1,86 @@
+@keyframes obfuscation {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
+.cover {
+    color: #fff;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 48px;
+    position: relative; 
+}
+
+.cover__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.cover__title {
+    max-width: 560px;
+    width: 100%;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 76px;
+    text-align: center;   
+}
+
+.cover__subtitle {
+    width: 360px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.cover__shadow {
+    width: 100%;
+    height: 100%;
+    background-color: #2A2C2F;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 0;
+}
+
+.cover__shadow:hover {    
+    animation: obfuscation ease-in 0.3s;
+    opacity: 0.8;
+}
+
+.cover__background {
+    width: 100%;
+}
+
+
+
+@media (max-width: 1024px) {
+    .cover {
+        padding: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .cover__inner {
+        gap: 16px;
+    }
+    .cover__title {
+        width: 288px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .cover__subtitle {
+        width: 288px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

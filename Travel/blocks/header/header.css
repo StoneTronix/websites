@@ -1,0 +1,50 @@
+.header {    
+    height: 52px;
+    display: flex;    
+    justify-content: space-between;    
+    padding-top: 28px;
+}
+
+.header__logo { 
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+
+.header__lang-link {   
+    font-size: 24px;
+    line-height: 28px;  
+    display: flex;    
+    align-self: flex-end;    
+    column-gap: 18px;    
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.header__lang-item {
+    color: #fff;
+    font-weight: normal;    
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        height: 42px;
+        padding-top: 16px;
+    }
+
+    .header__lang-link {
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom: 8px;
+    }
+}
+
+

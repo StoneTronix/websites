@@ -1,0 +1,17 @@
+.digits {
+    padding: 100px 0;
+}
+
+.digits__section-title {    
+    margin: 0 auto 20px auto;
+}
+
+.digits__section-subtitle {
+    margin: 0 auto;
+}
+
+.digits__item-text i {
+    font-style: normal;
+    display: inline-block;
+    margin-top: 20px;
+}

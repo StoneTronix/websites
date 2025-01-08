@@ -1,0 +1,58 @@
+.page {
+    background-color: #2A2C2F;
+    font-family: "Inter", sans-serif; 
+    font-optical-sizing: auto;    
+}
+
+.page__gaps {
+    display: flex;
+    flex-direction: column;
+    gap: 92px;
+}
+
+/* Для головных элементов */
+.padding-main {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+/* Для элементов сайта */
+.padding-normal {
+    padding: 0 148px;
+}
+
+@media screen and (max-width: 1024px) {
+    .padding-normal {
+        padding: 0 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .padding-main {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .padding-normal {
+        padding: 0 24px;
+    }
+    
+    .page__gaps {
+        gap: 88px;
+    }
+}
+
+@media (max-width: 320px) {
+    .padding-normal {
+        padding: 0 16px;
+    }
+    
+    .padding-main {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .page__gaps {        
+        gap: 64px;
+    }    
+}

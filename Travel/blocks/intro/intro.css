@@ -1,0 +1,44 @@
+.intro {
+    max-width: 690px;       
+}
+
+.intro__title {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.intro__text {
+    color: #fff;
+    line-height: 163%;    
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.intro__list {
+    list-style: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 33px;
+}
+
+.list__category {
+    font-weight: 700;
+}
+
+@media (max-width: 320px) {    
+    .intro__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .intro__text {
+        font-size: 16px;
+        line-height: 163%;
+    }
+    .intro__list {        
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 34px;
+    }
+}

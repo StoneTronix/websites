@@ -1,0 +1,84 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header { 
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;  
+    
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+  
+.logo_place_header {  
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+  
+.header__title {
+  width: 730px;  
+  left: 64px;
+  font-weight: 600;
+  font-size: 102px;
+  line-height: 96px;
+  position: absolute;
+  left: 64px;
+  margin: 0;
+  z-index: 3;
+}
+  
+.header__subtitle {
+  width: 388px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+  
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__square-pic { 
+  width: 568px;  
+  height: 568px;  
+  background-color: #2f80ed;
+  animation: rotation 20s linear infinite;
+  position: absolute;   
+  top: 64px;
+  right: 0;    
+  z-index: 0;    
+}
+  
+.header__main-illustration {
+  width: 765px;
+  height: 608px;     
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+  

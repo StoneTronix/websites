@@ -1,0 +1,14 @@
+.kaufman {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;    
+    position: relative;
+    padding: 90px 0;
+    background-color: #1f1f1f;
+    z-index: 3;
+  }
+
+.kaufman__table_spacing {
+    padding-top: 80px;
+    row-gap: 80px;
+}

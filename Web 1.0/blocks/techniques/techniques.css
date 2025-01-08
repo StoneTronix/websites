@@ -1,0 +1,49 @@
+.techniques {
+    width: 80%;
+    position: relative;    
+    margin: 100px auto 0;
+}
+
+.cards {
+    width: 920px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 100px;
+}
+
+.cards__item {
+    width: 240px;
+    text-align: center;
+}
+
+.cards__image {    
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+    margin: 60px 40px 43px 40px;
+    border-radius: 50%;
+}
+
+.cards__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.15;    
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.cards__description {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 23px;
+    margin: 0;
+}
+
+.techniques__section-title {
+    margin: 0 auto 20px auto;
+}
+
+.techniques__section-subtitle {
+    margin: 0 auto;
+}

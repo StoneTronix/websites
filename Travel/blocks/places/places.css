@@ -1,0 +1,103 @@
+.places {    
+    display: flex;
+    flex-direction: column;
+    gap: 80px;    
+}
+
+.place__headline {
+    display: flex;
+    gap: 40px;
+}
+
+.place__title {    
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 76px;   
+    flex: 1;
+}
+
+.website__url {
+    width: 50%;        
+    align-self: flex-end;
+    flex: 1;
+}
+
+.website__url-heading {
+    color: #aaa;    
+    font-size: 12px;
+    font-weight: 400;    
+    letter-spacing: 2px;
+}
+
+.website__link {
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.website__link:hover {
+    opacity: 0.8;
+}
+
+.places__place {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.place__article {
+    display: flex;
+    gap: 40px;
+    margin-top: 48px;    
+}
+
+.place__image, .places__paragraphs {     
+    flex: 1 1 0;
+    min-width: 0;   /* Чинит поехавшие изображения */
+}
+
+.place__image {
+    width: 100%;    /* Изображение заполняет контейнер */
+    height: 100%;   /* Сохраняет пропорции, занимая все пространство */
+    object-fit: contain; 
+    display: block; /* Убираем лишние пробелы вокруг изображения */
+}
+
+.places__paragraphs {
+    display: flex;
+    flex-direction: column;    
+    gap: 27px;
+}
+
+.places__paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 163%;
+}
+
+@media (max-width: 768px) {
+    .place__title {
+        font-size: 42px;
+        line-height: 46px;   
+    }
+}
+
+@media (max-width: 425px) {
+    .place__headline {
+        flex-direction: column;
+    }
+    .place__title {
+        width: 100%;
+        font-size: 32px;
+        line-height: 35px;   
+    }
+    .website__url {
+        width: 100%;     
+        align-self: flex-start;
+    }
+    .place__article {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+    }
+}
